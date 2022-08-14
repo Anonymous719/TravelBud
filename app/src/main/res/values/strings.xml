@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">TravelBud</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="visit_nearby_location">Visit Nearby Location</string>
+    <string name="what_do_you_want_to_do">What Do You Want To Do ?</string>
+    <string name="travel">travel</string>
+    <string name="plan_my_trip">Plan My Trip</string>
+    <string name="no_of_people">No of People</string>
+    <string name="your_destination">Your Destination</string>
+    <string name="your_current_location">Your Current Location</string>
+    <string name="what_activities_to_do">What activities to do?</string>
+    <string name="hike">Hike</string>
+    <string name="travel1">Travel</string>
+    <string name="ride">Ride</string>
+    <string name="how_many_people_will_you_add">How many people will you add?</string>
+    <string name="plan">Plan</string>
+    <string name="no_of_people_add">People To Add</string>
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".plantrip">
+
+    <TextView
+        android:id="@+id/planmytrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/plan_my_trip"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/currentlocation"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/your_current_location"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        app:layout_constraintStart_toStartOf="@id/planmytrip"
+        app:layout_constraintTop_toBottomOf="@+id/planmytrip" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/destination"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/your_destination"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        app:layout_constraintStart_toStartOf="@id/planmytrip"
+        app:layout_constraintTop_toBottomOf="@+id/currentlocation" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/noofpeople"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/no_of_people"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        app:layout_constraintStart_toStartOf="@id/planmytrip"
+        app:layout_constraintTop_toBottomOf="@+id/destination" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/what_activities_to_do"
+        app:layout_constraintStart_toStartOf="@+id/planmytrip"
+        app:layout_constraintTop_toBottomOf="@+id/noofpeople"
+        android:id="@+id/whattodo"/>
+    <CheckBox
+        android:id="@+id/hike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hike"
+        app:layout_constraintStart_toStartOf="@+id/planmytrip"
+        app:layout_constraintTop_toBottomOf="@+id/whattodo" />
+
+    <CheckBox
+        android:id="@+id/travel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/travel1"
+        app:layout_constraintStart_toStartOf="@+id/planmytrip"
+        app:layout_constraintTop_toBottomOf="@+id/hike" />
+
+    <CheckBox
+        android:id="@+id/ride"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ride"
+        app:layout_constraintStart_toStartOf="@+id/planmytrip"
+        app:layout_constraintTop_toBottomOf="@+id/travel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/willinclude"
+        android:text="@string/how_many_people_will_you_add"
+        app:layout_constraintTop_toBottomOf="@+id/ride"
+        app:layout_constraintStart_toStartOf="@+id/planmytrip"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/noofpeopleadd"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/no_of_people_add"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        app:layout_constraintStart_toStartOf="@id/planmytrip"
+        app:layout_constraintTop_toBottomOf="@+id/willinclude" />
+
+    <Button
+        android:id="@+id/planbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/noofpeopleadd"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="15dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/plan"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
